@@ -7,46 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:648872152404:android:a8cf41deeab8ed99364cc1",
+        "mobilesdk_app_id": "1:648872152404:android:7fe844ce249e95f6364cc1",
         "android_client_info": {
           "package_name": "com.example.lughahub"
         }
       },
       "oauth_client": [
         {
-          "client_id": "648872152404-q8q8mb7i6moteuh3i0h53h3pm3krcc9c.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyACYLWIRgFB8SLWLpsvgHAqy8Z1sMWwcRU"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "648872152404-q8q8mb7i6moteuh3i0h53h3pm3krcc9c.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:648872152404:android:933a5742e1c87562364cc1",
-        "android_client_info": {
-          "package_name": "com.pranshu.nagp_quiz"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "648872152404-9qqumftf6cubmpo2b6lqaljrmig60uau.apps.googleusercontent.com",
+          "client_id": "648872152404-3elbgquqnpsahacv01r0saulm6v1pp1m.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.pranshu.nagp_quiz",
+            "package_name": "com.example.lughahub",
             "certificate_hash": "6fb786b1a48629e25d8374fe232c5848cd1cac76"
           }
         },

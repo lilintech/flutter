@@ -33,7 +33,7 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("BLoC Quiz"),
+        title: const Text("LughaHub"),
         backgroundColor: Colors.green,
       ),
       body: BlocListener<AuthBloc, AuthState>(

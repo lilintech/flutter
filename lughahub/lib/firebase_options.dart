@@ -51,17 +51,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyDFMYvohYPOpoa-JEc-_G0Sar3a8yfHZ04',
-    appId: '1:648872152404:web:1108db317e3d411c364cc1',
+    appId: '1:648872152404:web:b12f7155f4138683364cc1',
     messagingSenderId: '648872152404',
     projectId: 'quizapp-a2a35',
     authDomain: 'quizapp-a2a35.firebaseapp.com',
     storageBucket: 'quizapp-a2a35.appspot.com',
-    measurementId: 'G-ZNC7LG8MBE',
+    measurementId: 'G-BFH637YPES',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyACYLWIRgFB8SLWLpsvgHAqy8Z1sMWwcRU',
-    appId: '1:648872152404:android:a8cf41deeab8ed99364cc1',
+    appId: '1:648872152404:android:7fe844ce249e95f6364cc1',
     messagingSenderId: '648872152404',
     projectId: 'quizapp-a2a35',
     storageBucket: 'quizapp-a2a35.appspot.com',

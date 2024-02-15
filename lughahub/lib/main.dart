@@ -1,5 +1,6 @@
 import 'package:lughahub/bloc/auth/auth_bloc.dart';
 import 'package:lughahub/data/repositories/auth_repository.dart';
+import 'package:lughahub/firebase_options.dart';
 import 'package:lughahub/presentation/Dashboard/dashboard.dart';
 import 'package:lughahub/presentation/auth/sign_in/sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -9,7 +10,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+ await Firebase.initializeApp(
+   options: DefaultFirebaseOptions.currentPlatform,
+ );
   runApp(const MyApp());
 }
 

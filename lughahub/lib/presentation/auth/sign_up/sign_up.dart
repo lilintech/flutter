@@ -6,7 +6,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_signin_button/button_builder.dart';
 import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
-
 import '../sign_in/sign_in.dart';
 
 class SignUp extends StatefulWidget {
@@ -33,7 +32,7 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("BLoC Quiz"),
+        title: const Text("LughaHub"),
         backgroundColor: Colors.green,
       ),
       body: BlocConsumer<AuthBloc, AuthState>(

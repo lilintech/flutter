@@ -20,7 +20,7 @@ class Dashboard extends StatelessWidget {
           appBar: AppBar(
             centerTitle: true,
             title: const Text(
-              'BLoC Quiz',
+              'LughaHub',
               style: TextStyle(
                 fontSize: 24,
               ),
@@ -86,9 +86,9 @@ class Dashboard extends StatelessWidget {
                 applicationIcon: Icon(
                   Icons.task_alt,
                 ),
-                applicationName: 'BLoC Quiz',
+                applicationName: 'LughaHub',
                 applicationVersion: '1.0.0',
-                applicationLegalese: 'Pranshu Malhotra',
+                applicationLegalese: 'Group 5',
                 aboutBoxChildren: [
                   ///Content goes here...
                 ],
