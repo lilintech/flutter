@@ -56,7 +56,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     // ignore: non_constant_identifier_names
     List<Widget> Options = [];
 
-    for (int j = 0; j < 4; j++) {
+    for (int j = 0; j < options.length; j++) {
       Options.add(OptionWidget(
         widget: widget,
         option: options[j],

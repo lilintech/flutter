@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:lughahub/data/repositories/auth_repository.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:meta/meta.dart';
@@ -26,6 +27,14 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<SignUpRequested>((event, emit) async {
       emit(Loading());
       try {
+        await FirebaseFirestore.instance
+            .collection('users')
+            .doc(FirebaseAuth.instance.currentUser!.uid)
+            .set({
+          'name': event.name,
+          'email': event.email,
+          // Other user-related data
+        });
         await authRepository.signUp(
             name: event.name, email: event.email, password: event.password);
         emit(Authenticated(FirebaseAuth.instance.currentUser!));

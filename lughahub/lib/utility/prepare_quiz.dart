@@ -6,8 +6,8 @@ class PrepareQuiz {
   final List<Question> _questionList = [];
 
   List<String> _createOptions(dynamic json, int i) {
-    List<String> list = (json[i]['incorrectAnswers']).cast<String>();
-    list.add(json[i]['correctAnswer']);
+    List<String> list = (json[i]['answers']).cast<String>();
+    // list.add(json[i]['correctAnswer']);
 
     list.shuffle();
 
@@ -24,10 +24,10 @@ class PrepareQuiz {
   }
 
   void populateList(dynamic json) {
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < json.length; i++) {
       _questionList.add(Question(
         question: json[i]['question'],
-        correctAnswer: json[i]['correctAnswer'],
+        correctAnswer: json[i]['correct_answer'],
         options: _createOptions(json, i),
       ));
     }
